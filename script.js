@@ -16,22 +16,24 @@ function calcularMedia()
     return;
   }
 
-  let valor_ponderado = new Array;
+  let valoresPonderados = 0;
 
   for(let i = 0; i < valor.length; i++)
   {
-    valor_ponderado[i] = parseFloat(valor[i] * peso[i]).toFixed('2')
-    console.log(valor_ponderado[i],valor[i], peso[i])
+    parseFloat(valoresPonderados += valor[i] * peso[i]).toFixed('2')
+    console.log(valoresPonderados)
   }
 
-  let media_ponderada = 0;
+  let somaPesos = 0;
   
-  for(let i = 0; i < valor_ponderado.length; i++)
+  for(let i = 0; i < peso.length; i++)
   {
-    media_ponderada += parseFloat(valor_ponderado[i])
+    somaPesos += parseFloat(peso[i])
   }
 
-  if (isNaN(media_ponderada))
+  mediaPonderada=valoresPonderados/somaPesos
+
+  if (isNaN(mediaPonderada))
   {
     resultado.innerHTML = ("Insira apenas números separados por vírgulas")
     return;
@@ -40,5 +42,5 @@ function calcularMedia()
   resultado.innerHTML = "A média ponderada dos valores: <br>"
                         + valor + "<br> combinados com os pesos: <br>"
                         + peso + "<br> é igual a: <br>" 
-                        + parseFloat(media_ponderada).toFixed('2')
+                        + parseFloat(mediaPonderada).toFixed('2')
 }
