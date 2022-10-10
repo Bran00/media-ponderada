@@ -3,7 +3,7 @@
 <html lang="pt_br">
 
 <head>
-  <title>TODO supply a title</title>
+  <title>Média Aritmética Ponderada</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="media.css">
@@ -15,25 +15,19 @@
   <h1>Calculador de Média Aritmética Ponderada</h1>
   <main>
     <span id="aviso">Coloque os números na caixa abaixo para obter a média:</span>
-    <div id="espacos">
-    <form id="valores">
-    <input type="text" id="valor" placeholder="Valor1, Valor 2, Valor 3...">
-    </form>
-    <p id="modo">
-    X
-    </textarea>
-    <form id="pesos">
-     <input type="text" id="peso" placeholder="Peso 1, Peso 2, Peso 3...">
-    </form>
-    </div>
-    <div>
-      <input id="botao" type="button" value="Obter média">
-    </div>
-    <div id="result">
-      <p>
-        Resultado
-      </p>
-    </div>
+    <section id="espacos">
+      <form id="valores">
+        <input type="text" id="valor" placeholder="Valor1, Valor 2, Valor 3...">
+      </form>
+      <span id="modo">X</span>
+      <form id="pesos">
+        <input type="text" id="peso" placeholder="Peso 1, Peso 2, Peso 3...">
+      </form>
+    </section>
+
+    <input id="botao" type="button" value="Obter média">
+    
+    <span id="result">Resultado</span>
   </main>
 </body>
 </html>
