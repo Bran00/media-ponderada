@@ -28,7 +28,7 @@ function calcularMedia()
   
   for(let i = 0; i < valor_ponderado.length; i++)
   {
-    media_ponderada += parseFloat(valor_ponderado[i])
+    media_ponderada /= parseFloat(valor_ponderado[i])
   }
 
   if (isNaN(media_ponderada))
