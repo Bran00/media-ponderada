@@ -17,21 +17,14 @@ function calcularMedia()
   }
 
   let valoresPonderados = 0;
-
+  let somaPesos = 0;
   for(let i = 0; i < valor.length; i++)
   {
-    parseFloat(valoresPonderados += valor[i] * peso[i]).toFixed('2')
-    console.log(valoresPonderados)
-  }
-
-  let somaPesos = 0;
-  
-  for(let i = 0; i < peso.length; i++)
-  {
+    parseFloat(valoresPonderados += valor[i] * peso[i]).toFixed('2');
     somaPesos += parseFloat(peso[i])
   }
-
-  mediaPonderada=valoresPonderados/somaPesos
+  
+  mediaPonderada = valoresPonderados/somaPesos
 
   if (isNaN(mediaPonderada))
   {
